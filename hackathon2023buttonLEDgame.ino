@@ -41,12 +41,12 @@ void loop() {
   }
 
   button2State = digitalRead(PD6);
-  // if (button2State == HIGH) {
+  if (button2State == HIGH) {
     digitalWrite(10, HIGH);
-  //   Serial.println(1);
-  // }
-  // else {
-  //   digitalWrite(10, LOW);
-  //   Serial.println(0);
-  // }
+    Serial.println(1);
+  }
+  else {
+    digitalWrite(10, LOW);
+    Serial.println(0);
+  }
  }
